@@ -1,8 +1,13 @@
+.menu {
+    background-color: #f9d3a1;
+}
 .menu p{
     font-size: 4vmax;
+    padding-top: 2vmax;
+    cursor: pointer;
 }
 .menu-card{
-    margin:4vmax;
+    padding :4vmax;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -18,12 +23,14 @@
     height: 26vmax;
     border-radius: 4vmin;
     margin:2vmin;
-    transition: all 400ms;
+    transition: all 500ms;
 }
 .ice-cream-card:hover{
     -webkit-box-shadow: 0px 2px 17px 5px rgba(46,74,117,1);
     -moz-box-shadow: 0px 2px 17px 5px rgba(46,74,117,1);
     box-shadow: 0px 2px 17px 5px rgba(46,74,117,1);
+    position: relative;
+    bottom: 30px;
 }
 .ice-cream-card img{
     width:15vmax;
@@ -38,9 +45,13 @@
     text-align: center;
     border: 2px solid #000;
     border-radius: 15px 15px 15px 15px;
+    transition: all 300ms;
+    border: solid 1px transparent;
 }
 .ice-cream-card button:hover{
-    background-color: #97f1f1;
+    background-color: #fdec8c;
+    color: #1c1c1c;
+    border: 1px solid #fdec8c;
 }
 
 @media screen and (max-width:600px){
@@ -60,7 +71,17 @@
         font-size: 1.5vmax;
         flex: 0 0 auto;
     }
+    .ice-cream-card:hover {
+        bottom: 20px;
+    }
+
     .ice-cream-card button{
         width: 25vmin;
+    }
+    .margin-l {
+        margin-left: 480px;
+    }
+    .margin-r {
+        margin-right: 50px;
     }
 }

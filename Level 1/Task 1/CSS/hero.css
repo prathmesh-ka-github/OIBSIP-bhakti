@@ -9,9 +9,11 @@
 
 .container h2{
     color: #e47994;
-    margin: 0 3vmax 0 4vmax; 
+    margin: 0 0 0 4vmax; 
+    padding-top: 5.2vmax;
     font-size: 3vmax;
     word-spacing: 2vmin;
+    cursor: pointer;
 }
 .container button{
     font-size: 1.6vmax;
@@ -23,6 +25,7 @@
     height: 4vmax;
     border: 2px solid #000;
     border-radius: 28px 28px 28px 28px;
+    transition: all 300ms;
 }
 .container button:hover{
     background-color: #ffd6d6;
@@ -38,5 +41,13 @@
         align-items: center;
         height: 30vmax;
         font-size: 2vmin;
+    }
+    .container button {
+        margin-top: 50px;
+    }
+    .container h2 {
+        font-size: 19px;
+        margin-left: 0;
+        padding-top: 0;
     }
 }

@@ -4,6 +4,8 @@
     display: flex;
     justify-content: space-around;
     height:10vmin;
+    position: fixed;
+    width: 100vw;
 }
 .nav-bar img{
     margin:0%;
@@ -21,14 +23,14 @@
     cursor: pointer;
     margin:0 3vmin;
     border-bottom: 2px solid transparent ;
-    transition: all 300ms;
+    transition: all 500ms;
+    font-size: 25px;
 }
 .nav-bar div a:hover{
     border-bottom: 2px solid #000;
 }
 .search-bar{
     all:unset;
-    cursor: pointer;
     background-color: #F2EDED;
     width: 20vmax;
     height:2vmax;
@@ -37,22 +39,30 @@
     padding-left: 15px;
     border-radius:15px 15px 15px 0;
 }
+.search-ico {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
 
 .search-bar:hover{
     background-color: #ffffff;
 }       
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     .nav-bar{
         font-size: 1.6vmax;
+        height: 60px;
+        position: static;
     }
     .search-bar{
         display: none;
     }
     .search{
-        background-image: url(../essentials/logo/search-icon.png);
-        background-repeat: no-repeat;
         width: 30px;
         margin:-1vmin 1vmin 0.5vmin 0;
         padding: 20px;
+    }
+    .search-ico{
+        display: block;
     }
 }
